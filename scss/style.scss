@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+SA+Beginner:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap');
+
+
+*{
+    padding: 0%;
+    margin: 0%;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: rgb(36, 36, 36);
+    color: azure;
+}
+header{
+    height: 100vh;
+    background:linear-gradient(rgba(89, 46, 4, 0.397), rgba(1, 87, 90, 0.5)), url("/public/image/headerbg.png");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    .title{
+        h1 {
+            font-family: 'Edu SA Beginner', cursive; 
+            padding-bottom: 1em;
+        }
+        padding-top: 1em;
+        justify-content: space-between;
+        text-align: center;
+    }
+    .other-link{
+        padding-top: 2em;
+            text-align: center;
+        button{
+            background-color:rgba(240, 248, 255, 0);
+            color: white;
+            border: none;
+            cursor: pointer;
+            padding-left: 1em;
+        i{
+            font-size: 2em;
+        }
+            
+        }
+    }
+}
+nav{
+    
+    display: flex;
+    flex-direction: row;
+    background-color: rgba(0, 0, 0, 0.182);
+    .nav-burger{
+       display: none; 
+    }
+  
+         a{
+        font-size: larger;
+        padding: 1em;
+        text-decoration: none;
+        color: beige;
+        text-transform: uppercase;
+    }
+    a:hover{
+        color:rgb(36, 36, 36);
+        background-color: whitesmoke;
+    }
+}
+.content{
+    margin: 2em;
+    section{
+        h2{
+            font-family: 'Edu SA Beginner', cursive;
+            text-align: center;
+            text-transform: uppercase;
+            font-size: large;
+        }
+    }
+}
+footer{
+    background-color: whitesmoke;
+    color: rgb(36, 36, 36);
+    text-align: center;
+    padding: 2em;
+    bottom: 0;
+    a{
+        color: coral;
+    }
+    a:hover{
+        color: purple;
+    }
+}
+@media (max-width: 800px) {
+    nav{
+        .nav-burger{
+            display: block; 
+         }
+         
+            flex-direction: column;
+        text-align: center;
+         
+        
+    }
+
+}
