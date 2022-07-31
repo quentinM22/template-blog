@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+SA+Beginner:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap');
+
+
+*{
+    padding: 0%;
+    margin: 0%;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: rgb(36, 36, 36);
+    color: azure;
+}
+
+nav{
+    display: flex;
+    flex-direction: row;
+    background-color: rgba(0, 0, 0, 0.182);
+    .logo{
+        font-family: 'Edu SA Beginner', cursive;
+        font-size: 1em;
+        padding: 1em;
+    }
+    .navBurger{
+        display: none;
+    }
+    .list{
+        text-align: right;
+        padding: 1em;
+        a{
+            font-size: larger;
+            padding: 1em;
+            text-decoration: none;
+            color: beige;
+            text-transform: uppercase;
+        }
+        a:hover{
+            color:rgb(36, 36, 36);
+            background-color: whitesmoke;
+        }  
+    }
+      
+}
+.content{
+    margin: 2em;
+    section{
+        h2{
+            font-family: 'Edu SA Beginner', cursive;
+            text-align: center;
+            text-transform: uppercase;
+            font-size: large;
+        }
+    }
+}
+footer{
+    background-color: whitesmoke;
+    color: rgb(36, 36, 36);
+    text-align: center;
+    padding: 2em;
+    bottom: 0;
+    a{
+        color: coral;
+    }
+    a:hover{
+        color: purple;
+    }
+}
+@media (max-width: 800px) {
+    nav{
+        .navBurger{
+            display: block;
+            span{
+                display: block;
+                width: 35px;
+                height: 5px;
+                background-color:white;
+                margin: 6px 0;
+            } 
+         }
+         
+            flex-direction: column;
+        text-align: center;
+         
+        
+    }
+
+}
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <title>Blog | QuentinMdev</title>
+  </head>
+  <body>
+    
+    <header>
+      <nav>
+       
+          <div id="openNav" class="navBurger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div> 
+          <!-- <div id="navShow"> -->
+          <div class="logo">MyBlogTemplate</div>
+        <div class="list">
+                  <a href="">Lien 1</a>
+          <a href="">Lien 2</a>
+          <a href="">Lien 3</a>
+          <a href="">Lien 4</a>
+          <a href="">Contact</a>
+        </div>
+        
+        </div>
+        
+      </nav>
+     
+    </header>
+    
+     
+
+    <script src="https://kit.fontawesome.com/7448faa8d4.js" crossorigin="anonymous"></script>
+  </body>
+ 
+</html>
